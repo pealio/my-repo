@@ -1,3 +1,6 @@
+# 中間環境変数によるコンテキストの安全な参照 (environment-variables.ymlと比較して、特殊文字へ対応できている)
+# 1.コンテキストはシェルコマンドへハードコードせず、環境変数を経由して渡す
+# 2.環境変数はすべてダブルクォーテーションで囲む
 name: Intermediate Environment Variables
 on: push
 jobs:

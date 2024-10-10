@@ -1,0 +1,11 @@
+# Run workflow されないように、拡張子を取り除いている
+
+name: Schedule
+on:
+  schedule:
+    - cron: '/15 * * * *'
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: date
